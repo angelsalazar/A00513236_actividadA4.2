@@ -22,22 +22,6 @@ if __name__ == '__main__':
                     numbers.append(float(entry))
                 except ValueError:
                     print(f'Invalid number {entry}')
-                # original_raw_entry = RAW_ENTRY
-                # # parses the given raw_entry text by removing any char
-                # # that is not a digit, plus sign, minus sign, and period
-                # number_matched = re.search(r'[-+]?\d*\.?\d+', RAW_ENTRY)
-
-                # # if raw_entry got parsed, then retrieve the matching group
-                # # else default raw_entry to 0
-                # if number_matched:
-                #     RAW_ENTRY = number_matched.group()
-                # else:
-                #     RAW_ENTRY = 0
-
-                # try:
-                #     numbers.append(float(RAW_ENTRY))
-                # except TypeError:
-                #     print(f'Invalid number provided {original_raw_entry}')
         # saves file name
         statitics['TC'] = file_name.replace('.txt', '')
 
